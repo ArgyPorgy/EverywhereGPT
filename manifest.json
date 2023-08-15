@@ -1,34 +1,33 @@
 {
-    "manifest_version": 3,
-    "name": "My Extension",
-    "version": "1.0",
-    "description": "A Chrome extension to generate responses using the ChatGPT API.",
-    "permissions": [
-      "activeTab",
-      "http://*/*",
-      "https://*/*"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content_script.js"]
-      }
-    ],
-    "icons": {
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "A Chrome extension to generate responses using the ChatGPT API.",
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png",
       "128": "icon128.png"
     },
-    "browser_action": {
-      "default_icon": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-      },
-      "default_title": "My Extension"
-    }
+    "default_title": "AnywhereGPT"
   }
-  
+}
