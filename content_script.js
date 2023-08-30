@@ -1,8 +1,8 @@
-const key = "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";
+const key = "";
 
 const iconHTML = `<img src="https://i.ibb.co/C6YL1tN/icon1-removebg-preview.png" alt="EverywhereGPT" width="30px" height="30px">`;
 
-const inputElementSelector = `input[type=text], input[type=search], textarea, [contenteditable=true], textbox, [aria-label="Message Body"],[role=textbox],body.editable.LW-avf,tweet-box.rich-editor.notie,content,share-box,.Am Al editable LW-avf,div[g_editable="true"], Ar Au,r3,r7,.public-DraftStyleDefault-block,.public-DraftStyleDefault-block,.r-mk0yit,.r-13qz1uu,.css-1dbjc4n,share-creation-state__text-editor-redesigned .ql-editor,ql-editor,.css-1dbjc4n r-16y2uox r-bnwqim r-13qz1uu r-1g40b8q, div.ql-editor ql-blank, div > .ql-editor ql-blank,.Am.Al.editable,.Am.aO9.Al.editable,[data-text="true"]`;
+const inputElementSelector = `input[type=text], input[type=search], textarea, [contenteditable=true], textbox, [aria-label="Message Body"],[role=textbox],body.editable.LW-avf,tweet-box.rich-editor.notie,content,share-box,.Am Al editable LW-avf,div[g_editable="true"], Ar Au,r3,r7,.public-DraftStyleDefault-block,.public-DraftStyleDefault-block,.r-mk0yit,.r-13qz1uu,.css-1dbjc4n,share-creation-state__text-editor-redesigned .ql-editor,ql-editor,.css-1dbjc4n r-16y2uox r-bnwqim r-13qz1uu r-1g40b8q, div.ql-editor ql-blank, div > .ql-editor ql-blank,.Am.Al.editable,.Am.aO9.Al.editable,[data-text="true"],div.ql-editor ql-blank`;
 
 function build(inputAll){
     inputAll.forEach(input => {

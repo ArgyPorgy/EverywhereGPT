@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Extension",
+  "name": "EverywhereGPT",
   "version": "1.0",
-  "description": "A Chrome extension to generate responses using the ChatGPT API.",
+  "description": "A web extension to generate responses using the ChatGPT API.",
   "permissions": [
     "activeTab"
   ],
