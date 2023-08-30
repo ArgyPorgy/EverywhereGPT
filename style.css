@@ -1,0 +1,32 @@
+.floating-button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  border: 0px dashed white;
+  border-radius: 4px; /* Adjust the border-radius to your liking */
+  padding: 2px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 10px; /* Adjust the font size to make it smaller */
+  line-height: 1;
+  font-weight: 700; /* Adjust the font weight for boldness */
+  color: rgb(59, 130, 246);
+  opacity: 1; /* Reduce the opacity */
+}
+
+.floating-button img{
+  padding: 2px 2px;
+  border-radius: 4px;
+
+}
+
+.floating-button:hover {
+  opacity: 1;
+}
+
+.floating-button:disabled {
+  pointer-events: none;
+  cursor: wait;
+  color: white;
+}
