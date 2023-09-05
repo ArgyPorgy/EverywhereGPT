@@ -1,8 +1,8 @@
-const key = "";
+const key = "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";
 
 const iconHTML = `<img src="https://i.ibb.co/C6YL1tN/icon1-removebg-preview.png" alt="EverywhereGPT" width="30px" height="30px">`;
 
-const inputElementSelector = `input[type=text], input[type=search], textarea, [contenteditable=true], textbox, [aria-label="Message Body"],[role=textbox],body.editable.LW-avf,tweet-box.rich-editor.notie,content,share-box,.Am Al editable LW-avf,div[g_editable="true"], Ar Au,r3,r7,.public-DraftStyleDefault-block,.public-DraftStyleDefault-block,.r-mk0yit,.r-13qz1uu,.css-1dbjc4n,share-creation-state__text-editor-redesigned .ql-editor,ql-editor,.css-1dbjc4n r-16y2uox r-bnwqim r-13qz1uu r-1g40b8q, div.ql-editor ql-blank, div > .ql-editor ql-blank,.Am.Al.editable,.Am.aO9.Al.editable,[data-text="true"],div.ql-editor ql-blank`;
+const inputElementSelector = `input[type=text], canvas, textarea,[contenteditable="true"],textbox,[role="textbox"],body.editable.LW-avf,tweet-box.rich-editor.notie,content,share-box,.Am Al editable LW-avf,div[g_editable="true"],.Am.Al.editable,.ProseMirror[contenteditable=true],[contenteditable=true]`;
 
 function build(inputAll){
     inputAll.forEach(input => {
@@ -13,8 +13,8 @@ function build(inputAll){
 
         function syncButtonPosition() {
             const inputFieldBoundingClientRect = input.getBoundingClientRect();
-            button.style.top = `${inputFieldBoundingClientRect.y - 38}px`;
-            button.style.left = `${inputFieldBoundingClientRect.x + inputFieldBoundingClientRect.width - 38}px`;
+            button.style.top = `${inputFieldBoundingClientRect.y + 50}px`;
+            button.style.left = `${inputFieldBoundingClientRect.x + inputFieldBoundingClientRect.width - 100}px`;
           }
 
           syncButtonPosition();
@@ -64,7 +64,6 @@ makeButtonDraggable(button);
           });
 
           const data = await response.json();
-          console.log("here is the data fetched from openai : ", data);
 
           const output = data.choices[0].text;
 
@@ -85,7 +84,6 @@ makeButtonDraggable(button);
 
 function main(){
     const inputAll = document.querySelectorAll(inputElementSelector);
-    console.log("input elements are : ", inputAll);
   
     build(inputAll);
    

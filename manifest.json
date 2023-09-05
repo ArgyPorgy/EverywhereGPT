@@ -6,6 +6,9 @@
   "permissions": [
     "activeTab"
   ],
+  "icons":{
+     "48": "png1.png"
+  },
   
   "content_scripts": [
     {
@@ -14,4 +17,6 @@
       "js": ["content_script.js"]
     }
   ]
+    
+  
 }
